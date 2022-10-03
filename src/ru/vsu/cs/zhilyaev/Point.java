@@ -3,8 +3,8 @@ package ru.vsu.cs.zhilyaev;
 import java.awt.*;
 
 public class Point {
-    private double[] coordinates = new double[2];
-    private Color color;
+    private final double[] coordinates = new double[2];
+    private final Color color;
 
     public Point(double x, double y, int r, int g, int b) {
         this.coordinates[0] = x;
