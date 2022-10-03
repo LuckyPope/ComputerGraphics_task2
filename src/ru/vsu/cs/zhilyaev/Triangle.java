@@ -21,8 +21,8 @@ public class Triangle {
         int pixelValue = Color.WHITE.getRGB();
 
         if (l1 >= 0 && l1 <= 1 && l2 >= 0 && l2 <= 1 && l3 >= 0 && l3 <= 1) {
-            int r = makeColor((int)(points[0].getColor().getRed() * l2), (int)(points[0].getColor().getGreen() * l2), (int)(points[0].getColor().getBlue() * l2)).getRGB();
-            int g = makeColor((int)(points[1].getColor().getRed() * l1), (int)(points[1].getColor().getGreen() * l1), (int)(points[1].getColor().getBlue() * l1)).getRGB();
+            int r = makeColor((int)(points[0].getColor().getRed() * l1), (int)(points[0].getColor().getGreen() * l1), (int)(points[0].getColor().getBlue() * l1)).getRGB();
+            int g = makeColor((int)(points[1].getColor().getRed() * l2), (int)(points[1].getColor().getGreen() * l2), (int)(points[1].getColor().getBlue() * l2)).getRGB();
             int b = makeColor((int)(points[2].getColor().getRed() * l3), (int)(points[2].getColor().getGreen() * l3), (int)(points[2].getColor().getBlue() * l3)).getRGB();
 
             pixelValue = r + g + b;
